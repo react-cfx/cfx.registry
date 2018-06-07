@@ -5,7 +5,10 @@
     "build": "gulp build",
     "rebuild": "gulp rebuild",
     "dev": "micro-dev",
-    "start": "micro"
+    "start": "micro",
+    "docker:dev": "cd Docker/dev && make rebuild",
+    "docker:latest": "cd Docker/dev && make rebuild",
+    "docker": "npm run docker:dev; npm run docker:latest"
   },
   "main": "dist/bundle.js",
   "devDependencies": {

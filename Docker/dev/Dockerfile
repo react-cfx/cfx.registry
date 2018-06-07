@@ -10,4 +10,4 @@ RUN apt-get update && \
     apt-get autoremove -y
 
 RUN git clone https://github.com/react-cfx/cfx.registry.git && \
-    cd /root/cfx.registry && bash -lc 'yarn'
+    cd /root/cfx.registry && bash -lc 'yarn && yarn rebuild'
