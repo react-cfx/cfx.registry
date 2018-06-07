@@ -18,12 +18,14 @@ export default
     'gulp-sequence'
     'rollup'
     'rollup-plugin-cleanup'
+    'url-pattern'
   ]
   devdep: [
     'autod'
     'ddeyes'
     'micro-dev'
     'shelljs'
+    'cfx.service'
   ]
   exclude: [
     './dist'
