@@ -1,0 +1,610 @@
+{
+  "_id": "ddeyes",
+  "_rev": "10-fd6b658704442aa91737b7a2958fa928",
+  "name": "ddeyes",
+  "dist-tags": {
+    "latest": "0.2.11"
+  },
+  "versions": {
+    "0.0.0": {
+      "name": "ddeyes",
+      "version": "0.0.0",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "test": ""
+      },
+      "dependencies": {},
+      "devDependencies": {
+        "coffee-script": "*",
+        "eyes": "*",
+        "shelljs": "*"
+      },
+      "gitHead": "9198be4d607eefd9cc29e6135712d9f9e84ebef9",
+      "_id": "ddeyes@0.0.0",
+      "_shasum": "c9b42d84c338140f8a01af00f4ceffad51ee2c21",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.3.0",
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "dist": {
+        "shasum": "c9b42d84c338140f8a01af00f4ceffad51ee2c21",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.1": {
+      "name": "ddeyes",
+      "version": "0.0.1",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "test": ""
+      },
+      "dependencies": {
+        "coffee-script": "*",
+        "eyes": "*"
+      },
+      "devDependencies": {
+        "shelljs": "*"
+      },
+      "gitHead": "63f03a97f161f6538ff97e858ea6e080e43d903a",
+      "_id": "ddeyes@0.0.1",
+      "_shasum": "8a3654d3112af1835c9b3e698908027f526ee0fb",
+      "_from": ".",
+      "_npmVersion": "3.3.12",
+      "_nodeVersion": "5.3.0",
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "dist": {
+        "shasum": "8a3654d3112af1835c9b3e698908027f526ee0fb",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.1.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.2": {
+      "name": "ddeyes",
+      "version": "0.0.2",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "clean": "make clean",
+        "build": "make build",
+        "test": "make test"
+      },
+      "dependencies": {},
+      "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "coffeescript": "next",
+        "eyes": "^0.1.8",
+        "shelljs": "^0.7.7"
+      },
+      "gitHead": "c538a54c69179277d45afc85e434c2ae5a821679",
+      "_id": "ddeyes@0.0.2",
+      "_shasum": "aad776ed761c99f5de861b0c8d14292428cde82b",
+      "_from": ".",
+      "_npmVersion": "4.1.2",
+      "_nodeVersion": "7.7.4",
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "dist": {
+        "shasum": "aad776ed761c99f5de861b0c8d14292428cde82b",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.2.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes-0.0.2.tgz_1496398564047_0.4886412255000323"
+      },
+      "directories": {}
+    },
+    "0.0.3": {
+      "name": "ddeyes",
+      "version": "0.0.3",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "clean": "make clean",
+        "build": "make build",
+        "test": "make test"
+      },
+      "dependencies": {
+        "eyes": "^0.1.8"
+      },
+      "devDependencies": {
+        "babel-core": "^6.24.1",
+        "babel-preset-es2015": "^6.24.1",
+        "coffeescript": "next",
+        "shelljs": "^0.7.7"
+      },
+      "gitHead": "534a4c420ad47f4d79229515ffa95efa7d5bc889",
+      "_id": "ddeyes@0.0.3",
+      "_npmVersion": "5.0.0",
+      "_nodeVersion": "8.0.0",
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-B2aDMkoYJdQMFK8QRWg4Xj3xEHzGa6xrBRolgIRm3daj3ivm5g9Cow/sn6VMTNs5lugCSbpSnr6+goSssbmdXg==",
+        "shasum": "f65633a094f3e1c9f3c3b7c5f2dc93e4d69f152e",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.3.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes-0.0.3.tgz_1496478526396_0.8442021494265646"
+      },
+      "directories": {}
+    },
+    "0.0.4": {
+      "name": "ddeyes",
+      "version": "0.0.4",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "index.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "clean": "make clean",
+        "build": "make build",
+        "test": "make test"
+      },
+      "dependencies": {
+        "eyes": "^0.1.8"
+      },
+      "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "coffeescript": "next",
+        "shelljs": "^0.7.7"
+      },
+      "gitHead": "ded36906d18ec858e734902b9a7c588eb2870040",
+      "_id": "ddeyes@0.0.4",
+      "_npmVersion": "5.0.0",
+      "_nodeVersion": "8.0.0",
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-Ypwu7xC0Tilv04hGtQRinpAC41uK/4wFrg6yxw47jdYNEVSqcC7bmYn/z2f6XJIFaPbXylLEOM9mN/38nGCwSQ==",
+        "shasum": "40e3cccbe9112fd497de534f2d55f91137ebcf3f",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.4.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes-0.0.4.tgz_1496505448961_0.10236902115866542"
+      },
+      "directories": {}
+    },
+    "0.0.5": {
+      "name": "ddeyes",
+      "version": "0.0.5",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "dist/bundle.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "clean": "rm -rf ./dist",
+        "build": "rollup -c",
+        "rebuild": "npm run clean; npm run build",
+        "dev": "rollup -c -w",
+        "postinstall": "npm run build"
+      },
+      "dependencies": {
+        "cfx.rollup-plugin-coffee2": "^0.1.4",
+        "eyes": "^0.1.8",
+        "rollup": "^0.52.3",
+        "rollup-plugin-cleanup": "^2.0.0"
+      },
+      "devDependencies": {
+        "coffeescript": "^2.1.0",
+        "shelljs": "^0.7.8"
+      },
+      "_id": "ddeyes@0.0.5",
+      "dist": {
+        "shasum": "d5902a2bd0ce9132a3419c8f8491ac1aab621882",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.5.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes-0.0.5.tgz_1513741767703_0.32835723692551255"
+      },
+      "directories": {}
+    },
+    "0.0.6": {
+      "name": "ddeyes",
+      "version": "0.0.6",
+      "description": "a simple wrapper for eyes inspector as default config.",
+      "author": {
+        "name": ":FooTearth",
+        "email": "footearth@gmail.com"
+      },
+      "main": "dist/bundle.js",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Mooxe000/ddeyes.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Mooxe000/ddeyes/issues"
+      },
+      "homepage": "https://github.com/Mooxe000/ddeyes",
+      "keywords": [
+        "dd",
+        "eyes",
+        "inspector"
+      ],
+      "scripts": {
+        "clean": "rm -rf ./dist",
+        "build": "rollup -c",
+        "rebuild": "npm run clean; npm run build",
+        "dev": "rollup -c -w",
+        "postinstall": "npm run build"
+      },
+      "dependencies": {
+        "cfx.rollup-plugin-coffee2": "^0.1.4",
+        "eyes": "^0.1.8",
+        "rollup": "^0.52.3",
+        "rollup-plugin-cleanup": "^2.0.0"
+      },
+      "devDependencies": {
+        "coffeescript": "^2.1.0",
+        "shelljs": "^0.7.8"
+      },
+      "_id": "ddeyes@0.0.6",
+      "dist": {
+        "shasum": "fa812d4ea909b3864ee90565ef0cacadc1de50a5",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.0.6.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes-0.0.6.tgz_1514356398978_0.014698365004733205"
+      },
+      "directories": {}
+    },
+    "0.2.1": {
+      "name": "ddeyes",
+      "version": "0.2.1",
+      "main": "dist/index.js",
+      "module": "dist/moudle.js",
+      "license": "MIT",
+      "publishConfig": {
+        "access": "public"
+      },
+      "scripts": {
+        "clean": "rm -rf ./dist",
+        "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
+        "rebuild": "npm run clean; npm run build",
+        "test": "./test/index.coffee",
+        "postinstall": "npm run build"
+      },
+      "dependencies": {
+        "eyes": "^0.1.8"
+      },
+      "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.46",
+        "@babel/core": "^7.0.0-beta.46",
+        "@babel/preset-es2015": "^7.0.0-beta.46",
+        "@babel/preset-stage-3": "^7.0.0-beta.46",
+        "coffeescript": "^2.3.0",
+        "shelljs": "^0.8.1"
+      },
+      "_id": "ddeyes@0.2.1",
+      "dist": {
+        "shasum": "d3ae1c1dc80e6e114d8e3d765b37a698383d2aed",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.2.1.tgz",
+        "fileCount": 9,
+        "unpackedSize": 2891,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa7yp4CRA9TVsSAnZWagAA0hkP/32doaLLL7ddvyiiTfm7\ntfS0y8WfR37t6vXpZY+3bEaSJLss7xTjmzzNTKksl7gklHDyRFUP4Um3pOBy\nkbo9r4b44vHF60QEArHUuwrItJn75V8yJdN2rGSJIjkJ83bb0nHQgVZaV5m6\nvefxafJyPK8XDai1zAJ2Z9XvZtl6waLZRsH4RkW16qaQLp0cos8++PKbM+2G\nED1xeOEIZEBgDs7K992q1UFN7xLuJNZa0+ZY0gAR5hBedro3+ODxkn68rjgu\n1sseo+Y5sHxGONu6f2DUeiPjUoQc3GqNu5gzpXPQW94atylPLrCS4Ulj3x9r\n7+7xtmND4l09sObrlsfwLhOJJOr0C9TUE/zO2XC1iarBMtC75+erTtfLGv5Q\nu7ZNB33uOdE/hNITNtEVPs+pE2iCU854jMTzl6LLFL+IE0AkIFtUpd2S21sC\nvpdR4ruW7Jk37d++fnzL3Kt1s9oAmLcM4BO/W+RV3968AgmQ469CFQah1Fz0\nWSoWpLyzoXqhhS/uQxOR9xa7d3nXgUA8am04+gyvhD2+a0VUPlW81Rts5Qe9\n7r/w7i1btyccVzbJ95tbJfu9hZsA9p0MKnXck8PQcHnpRHxdijSetzmGdFfh\nDS73TYB6b/MxC6zB6UY5+vILANWRFA6sCBsL1E957QyOzPS6DR4TLXMJS0DD\nnr0o\r\n=vYZk\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes_0.2.1_1525623416381_0.601576456567354"
+      }
+    },
+    "0.2.8": {
+      "name": "ddeyes",
+      "version": "0.2.8",
+      "main": "dist/index.js",
+      "license": "MIT",
+      "publishConfig": {
+        "access": "public"
+      },
+      "scripts": {
+        "autod": "autod",
+        "clean": "rm -rf ./dist",
+        "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
+        "rebuild": "npm run clean; npm run build",
+        "test": "./test/index.coffee",
+        "postinstall": "npm run build"
+      },
+      "dependencies": {
+        "eyes": "~0.1.8"
+      },
+      "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.47",
+        "@babel/core": "^7.0.0-beta.47",
+        "@babel/preset-es2015": "^7.0.0-beta.47",
+        "@babel/preset-stage-3": "^7.0.0-beta.47",
+        "autod": "^3.0.1",
+        "coffeescript": "^2.3.0",
+        "shelljs": "^0.8.2"
+      },
+      "_id": "ddeyes@0.2.8",
+      "dist": {
+        "shasum": "5b504b029e3246089ee9f2576d4cb6d81bc391f0",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.2.8.tgz",
+        "fileCount": 10,
+        "unpackedSize": 3296,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa+rYLCRA9TVsSAnZWagAA7PUP/3EmqO3f/K6JTM9JjQi5\n1YJ3vMXWMmYU4EUuRixTb6Z/NMVxwW/NRldP7hpUgtszv1S9FtBn4yJqCW/n\n8IYoLACfT1Ru6sK/PSM4Mehbz3jFg2Yj3Ozkbm1dAFns52CS753i2fefD5of\nRtUmD+YpMEmAFcLdfa7EHDX9lOoiO+stEv4C76ASJxne9fVJc194WcjN6i25\nzGfpSGFFIY+YYG25Kgt05Uf6ifMA0FvwY3vRAXT7hMxP+XXVqJhq3bcVV+sn\nnHYRat3eXl66CWbn6jxYVDSvW5tcvUzaElDcucaa31DwapFkqACrEZ/Lp9E4\n7GgEobt02rcj831dH82xYeajBAhFZM91ftzvBXQHEd9bSSPyewzbmUwzw595\nvqUht03z+Olug/8tnZZL+KOU8BXYqCNQitGt/K850q2zszr4jULdziFs5pYG\nF0eoJHB1pVcRaMJjuRJKpUaGDbWf+1DnIom9bZ5/7HvVUn1prwiY7hKvJx7V\nUYGICoO/BQzMcPWVcTqLfULJEa5uQ7VypFj5Z0NqVMuK4AyaBDiMaUAyRQbg\nhL3t4Mfdk3hgMv1jcKZ1uOKSH/SaG0/gKlvJcK3lD/kTjvI6jc15dtf+t2lv\nT+uNwZ6ejneyPWN+alTuon4DqSa9wOvQq0T7M51UTzNY7DUPLpRgAKp5kGL5\nRpT6\r\n=TzYk\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes_0.2.8_1526380043479_0.3093496243358276"
+      }
+    },
+    "0.2.11": {
+      "name": "ddeyes",
+      "version": "0.2.11",
+      "main": "dist/index.js",
+      "license": "MIT",
+      "publishConfig": {
+        "access": "public"
+      },
+      "scripts": {
+        "autod": "autod",
+        "clean": "rm -rf ./dist",
+        "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
+        "rebuild": "npm run clean; npm run build",
+        "test": "./test/index.coffee",
+        "postinstall": "npm run build"
+      },
+      "dependencies": {
+        "eyes": "~0.1.8"
+      },
+      "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.49",
+        "@babel/core": "^7.0.0-beta.49",
+        "@babel/preset-es2015": "^7.0.0-beta.49",
+        "@babel/preset-stage-3": "^7.0.0-beta.49",
+        "autod": "^3.0.1",
+        "coffeescript": "^2.3.1",
+        "shelljs": "^0.8.2"
+      },
+      "description": "",
+      "_id": "ddeyes@0.2.11",
+      "_npmVersion": "6.1.0",
+      "_nodeVersion": "10.3.0",
+      "_npmUser": {
+        "name": "footearth",
+        "email": "footearth@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-elucbMslBo+9l+XE1/4gaP7cQkKFdB4jILkUvR1kEsVttFmzOg6Mp7/zQWE8Lhl5Y9tqRpjnGTs3EtTvwPf4mA==",
+        "shasum": "d46a959e60c77275f5d1957713bdf99ced5a54b9",
+        "tarball": "https://registry.npmjs.org/ddeyes/-/ddeyes-0.2.11.tgz",
+        "fileCount": 7,
+        "unpackedSize": 3709,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbGKSICRA9TVsSAnZWagAAoHsP/0idYsWk2rybOCbibw+d\njfGiimJYWdpdgc0bX/vwvQJMfkEwYzONpwS+7Y9LIhlx1B1dyto3ci9Avfya\nkzEqKxL9kVkt0mp8x6p7+uEa6vNIWVcg7IW0gjRF9ZlxQyO5vJErJDS4gZ8I\nwYtYbusLpTMWwmr7n03si9MEmsHR5DVSxEOL6K+Qekx9qT/8PQ27QwS1c39q\nDmLJWEKX1ZrTusIUyFZYRUAwjpRpfyoCrJjkU+1U1TOV3X2xpOl+6UJOyJgc\nc9IXAc9AAwyYUa24aIxxvrV4JkPs3MdeD9MRnUegQ3MsraNm+Ag3w63ZHJun\nV0e2WnOBLdV/5AY+ooy77ecH6SzkO9MTw2/kgHwniv9dyy2XbHfoX8Xb+0EW\nOHmHW/unJh2BrGvFoXbZtp/Nfd7E8wrvI2uFFE2YPb73DMWwr9H2py0f9zr6\n5Zz0GWeoyZuvwW+xJWZHnehlsymdM+7Xxom5si0HgFKyqJJQDq/y2ER6HN4y\nX4FcOxlrP8mxmqARVwOPAimhm+yG8+0qqr0Xm6nuwJwTqxUxbUeMh1hnSoq9\ndETuI4yGjLiD9wpXPWWLL4StJIZrhc7V6XNAL4L3JrA/zu8qQRsP32j5RNAT\nuYTJE3dpb5kCaMNCxgjLNhyEh9Hhn3/vXMR+bOy5M/fpFDxkYAsHZP5fWVoc\n5qbS\r\n=c9gY\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "footearth",
+          "email": "footearth@gmail.com"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ddeyes_0.2.11_1528341640135_0.6583883306079739"
+      }
+    }
+  },
+  "readme": "# ddeye\n",
+  "maintainers": [
+    {
+      "name": "footearth",
+      "email": "footearth@gmail.com"
+    }
+  ],
+  "time": {
+    "modified": "2018-06-07T03:20:45.754Z",
+    "created": "2016-01-11T04:30:58.828Z",
+    "0.0.0": "2016-01-11T04:30:58.828Z",
+    "0.0.1": "2016-01-11T18:29:29.725Z",
+    "0.0.2": "2017-06-02T10:16:04.655Z",
+    "0.0.3": "2017-06-03T08:28:46.468Z",
+    "0.0.4": "2017-06-03T15:57:29.023Z",
+    "0.0.5": "2017-12-20T03:49:27.811Z",
+    "0.0.6": "2017-12-27T06:33:19.063Z",
+    "0.2.1": "2018-05-06T16:16:56.456Z",
+    "0.2.8": "2018-05-15T10:27:23.546Z",
+    "0.2.11": "2018-06-07T03:20:40.282Z"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "_attachments": {}
+}
