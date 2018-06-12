@@ -2,6 +2,7 @@ import dd from 'ddeyes'
 import 'shelljs/make'
 import Path from 'path'
 import jsonfile from 'jsonfile'
+import pkg from '../../src/Normalizer/package'
 
 JF =
   ddeyes: Path.join __dirname
@@ -9,7 +10,7 @@ JF =
 
 target.ddeyes = =>
   ddeyes = jsonfile.readFileSync JF.ddeyes
-  dd Object.keys ddeyes
+  dd pkg ddeyes
 
 target.all = =>
 
