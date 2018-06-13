@@ -1,10 +1,13 @@
 import { send } from 'micro'
-import UrlPattern from 'url-pattern'
+import dd from 'ddeyes'
+
 import jsonfile from 'jsonfile'
 import Path from 'path'
 import config from '../config'
 
-import * as api from './api'
+import * as api from '../api'
+
+import Normalizer from '../Normalizer/package'
 
 export default (req, res) =>
 
@@ -14,11 +17,11 @@ export default (req, res) =>
   try
     data = await api.packages packageName, tagOrVersion
   catch e
-    dd e()
+    dd e
 
   jsonfile.writeFileSync(
     Path.join "#{config.jsonPath}", "#{data.name}.json"
-    data
+    Normalizer data
     spaces: 2
     EOL: '\r\n'
   ) if data?
