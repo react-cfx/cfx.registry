@@ -68,8 +68,8 @@ export default (data) =>
   # }
 
   packages: 
-    all: _packages.entities
-    keys: _packages.result
+    all: _packages.entities.packages
+    keys: _packages.result.packages
   versions:
-    all: _versions.entities
-    keys: _versions.result
+    all: _versions.entities.versions
+    keys: _versions.result.versions

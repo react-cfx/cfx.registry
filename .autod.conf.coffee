@@ -19,6 +19,9 @@ export default
     'rollup'
     'rollup-plugin-cleanup'
     'url-pattern'
+    'normalizr'
+    'download'
+    'jsonfile'
   ]
   devdep: [
     'autod'

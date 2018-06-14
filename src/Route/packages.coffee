@@ -1,13 +1,8 @@
 import { send } from 'micro'
 import dd from 'ddeyes'
-
-import jsonfile from 'jsonfile'
-import Path from 'path'
-import config from '../config'
-
 import * as api from '../api'
-
 import Normalizer from '../Normalizer/package'
+import jsonFile from '../jsonFile'
 
 export default (req, res) =>
 
@@ -19,12 +14,7 @@ export default (req, res) =>
   catch e
     dd e
 
-  jsonfile.writeFileSync(
-    Path.join "#{config.jsonPath}", "#{data.name}.json"
-    Normalizer data
-    spaces: 2
-    EOL: '\r\n'
-  ) if data?
+  jsonFile Normalizer data if data?.name?
 
   send res, 200
   , data
