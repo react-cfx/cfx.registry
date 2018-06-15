@@ -1,5 +1,5 @@
 import dd from 'ddeyes'
-import { request } from 'cfx.service'
+import request from 'cfx.service.request'
 import config from './config'
 
 {

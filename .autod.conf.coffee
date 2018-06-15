@@ -22,13 +22,13 @@ export default
     'normalizr'
     'download'
     'jsonfile'
+    'cfx.service.request'
   ]
   devdep: [
     'autod'
     'ddeyes'
     'micro-dev'
     'shelljs'
-    'cfx.service'
   ]
   exclude: [
     './dist'

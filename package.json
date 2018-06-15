@@ -13,7 +13,6 @@
   "main": "dist/bundle.js",
   "devDependencies": {
     "autod": "^3.0.1",
-    "cfx.service": "^0.1.2",
     "ddeyes": "^0.2.11",
     "micro-dev": "^3.0.0",
     "shelljs": "^0.8.2"
@@ -21,6 +20,7 @@
   "dependencies": {
     "cfx.require-plugin-coffee": "~0.2.11",
     "cfx.rollup-plugin-coffee2": "~0.2.11",
+    "cfx.service.request": "~0.2.0",
     "del": "~3.0.0",
     "download": "~7.0.0",
     "gulp": "~3.9.1",
