@@ -1,5 +1,5 @@
 import { send } from 'micro'
-import dd from 'ddeyes'
+# import dd from 'ddeyes'
 import * as api from '../api'
 import Normalizer from '../Normalizer/package'
 import jsonFile from '../jsonFile'
@@ -14,7 +14,12 @@ export default (req, res) =>
   catch e
     dd e
 
-  jsonFile Normalizer data if data?.name?
+  # delete data.versions["#{data["dist-tags"].latest}"]._npmOperationalInternal
+
+  fileUrl = await jsonFile Normalizer data if data?.name?
+
+  unless fileUrl is ''
+    data.versions["#{data["dist-tags"].latest}"].dist.tarball = fileUrl
 
   send res, 200
   , data

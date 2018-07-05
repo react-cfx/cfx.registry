@@ -29,10 +29,10 @@ recReTryRequest = (
 
     data =
       if reTryTime < reTryTimes
-      then await recReTryRequest packageName, tagOrVersion, flag, (reTryTime + 1)
+      then await recReTryRequest urlFactory, flag, (reTryTime + 1)
       else (
         unless flag is (registryUrl.length - 1)
-        then await recReTryRequest packageName, tagOrVersion, flag + 1
+        then await recReTryRequest urlFactory, flag + 1, reTryTime
         else e
       )
 

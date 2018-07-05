@@ -5,7 +5,7 @@ import {
   schema
 } from 'normalizr'
 
-export default (data) =>
+encode = (data) =>
 
   versionSchema = new schema.Entity 'versions'
   , {}, idAttribute: '_id'
@@ -73,3 +73,5 @@ export default (data) =>
   versions:
     all: _versions.entities.versions
     keys: _versions.result.versions
+
+export default

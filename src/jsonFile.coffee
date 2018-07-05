@@ -1,9 +1,13 @@
-import dd from 'ddeyes'
+# import dd from 'ddeyes'
 import fs from 'fs'
 import Path from 'path'
+import crypto from 'crypto'
+
 import jsonfile from 'jsonfile'
-import config from './config'
 import download from 'download'
+import makeDir from 'make-dir'
+
+import config from './config'
 
 export default (jsonData) =>
 
@@ -14,27 +18,50 @@ export default (jsonData) =>
 
   pkgName = packages.keys[0]
   pkgDir = Path.join "#{config.jsonPath}", "/#{pkgName}"
+  lastVersion = packages.all[pkgName]["dist-tags"].latest
+  latestTarball = versions
+  .all["#{pkgName}@#{lastVersion}"]
+  .dist.tarball
+  file = "#{pkgDir}/#{pkgName}-#{lastVersion}.tgz"
 
-  unless fs.existsSync pkgDir
-    fs.mkdirSync pkgDir
-  else unless (fs.statSync pkgDir).isDirectory()
-    fs.unlinkSync pkgDir
-    fs.mkdirSync pkgDir
+  unless fs.existsSync file
 
-  jsonfile.writeFileSync(
-    "#{pkgDir}/package.json"
-    packages
-    spaces: 2
-    EOL: '\r\n'
-  )
+    unless fs.existsSync pkgDir
+      await makeDir pkgDir
+    else unless (fs.statSync pkgDir).isDirectory()
+      fs.unlinkSync pkgDir
+      await makeDir pkgDir
 
-  jsonfile.writeFileSync(
-    "#{pkgDir}/versions.json"
-    versions
-    spaces: 2
-    EOL: '\r\n'
-  )
+    await download latestTarball, pkgDir
 
-  latestTarball = versions.all["#{pkgName}@#{packages.all[pkgName]['dist-tags'].latest}"].dist.tarball
+    h = crypto.createHash 'sha1'
+    data = fs.readFileSync file
+    h.update data
+    shasum = h.digest 'hex'
 
-  await download latestTarball, pkgDir
+    if config.pkgCache is true
+      versions.all["#{pkgName}@#{lastVersion}"].dist.tarball =
+        "#{config.downloadPreUrl}/#{pkgName}/#{pkgName}-#{lastVersion}.tgz"
+
+    if shasum is jsonData.versions.all["#{pkgName}@#{lastVersion}"].dist.shasum
+
+      fs.writeFileSync "#{pkgDir}/shasum.txt", shasum
+
+      [
+        'package'
+        'version'
+      ].forEach (jsonName) =>
+        jsonfile.writeFileSync(
+          "#{pkgDir}/#{jsonName}.json"
+          jsonData["#{jsonName}s"]
+          spaces: 2
+          EOL: '\r\n'
+        )
+
+  else
+
+    if config.pkgCache is true
+      versions.all["#{pkgName}@#{lastVersion}"].dist.tarball =
+        "#{config.downloadPreUrl}/#{pkgName}/#{pkgName}-#{lastVersion}.tgz"
+
+  versions.all["#{pkgName}@#{lastVersion}"].dist.tarball
