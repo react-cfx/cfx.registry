@@ -1,8 +1,10 @@
 import { send } from 'micro'
-# import dd from 'ddeyes'
+import dd from 'ddeyes'
 import * as api from '../api'
 import Normalizer from '../Normalizer/package'
-import jsonFile from '../jsonFile'
+import jsonFile, {
+  readJson 
+} from '../jsonFile'
 
 export default (req, res) =>
 
@@ -14,12 +16,22 @@ export default (req, res) =>
   catch e
     dd e
 
-  # delete data.versions["#{data["dist-tags"].latest}"]._npmOperationalInternal
+  if data?.name?
 
-  fileUrl = await jsonFile Normalizer data if data?.name?
+    pkgName = data.name
+    await jsonFile Normalizer data
+    data = readJson pkgName
 
-  unless fileUrl is ''
-    data.versions["#{data["dist-tags"].latest}"].dist.tarball = fileUrl
+    dd data
 
-  send res, 200
-  , data
+    # unless fileUrl is ''
+    #   data.versions["#{data["dist-tags"].latest}"].dist.tarball = fileUrl
+
+    send res, 200
+    , data
+  
+  else 
+
+    send res, 200
+    ,
+      errorMsg: 'no name founded in data'

@@ -1,4 +1,4 @@
-# import dd from 'ddeyes'
+import dd from 'ddeyes'
 import {
   normalize
   denormalize
@@ -74,4 +74,27 @@ encode = (data) =>
     all: _versions.entities.versions
     keys: _versions.result.versions
 
-export default
+decode = ({
+  packages
+  versions
+}) =>
+
+  pkgName = packages.keys[0]
+
+  {
+    packages.all[pkgName]...
+    versions: packages.all[pkgName].versions.reduce (r, c) =>
+      { version } = versions.all[c]
+      {
+        r...
+        "#{version}": versions.all[c]
+      }
+    , {}
+  }
+
+export {
+  encode
+  decode
+}
+
+export default encode

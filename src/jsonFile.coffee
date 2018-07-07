@@ -8,8 +8,9 @@ import download from 'download'
 import makeDir from 'make-dir'
 
 import config from './config'
+import { decode } from './Normalizer/package'
 
-export default (jsonData) =>
+writeJson = (jsonData) =>
 
   {
     packages
@@ -65,3 +66,21 @@ export default (jsonData) =>
         "#{config.downloadPreUrl}/#{pkgName}/#{pkgName}-#{lastVersion}.tgz"
 
   versions.all["#{pkgName}@#{lastVersion}"].dist.tarball
+
+readJson = (pkgName) =>
+
+  pkgDir = Path.join "#{config.jsonPath}", "/#{pkgName}"
+  packages = jsonfile.readFileSync Path.join pkgDir, './package.json'
+  versions = jsonfile.readFileSync Path.join pkgDir, './version.json'
+
+  decode {
+    packages
+    versions
+  }
+
+export {
+  writeJson
+  readJson
+}
+
+export default writeJson
