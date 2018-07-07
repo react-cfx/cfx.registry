@@ -22,8 +22,6 @@ export default (req, res) =>
     await jsonFile Normalizer data
     data = readJson pkgName
 
-    dd data
-
     # unless fileUrl is ''
     #   data.versions["#{data["dist-tags"].latest}"].dist.tarball = fileUrl
 
