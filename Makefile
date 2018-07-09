@@ -1,6 +1,6 @@
 pjName := cfx.registry
 
-dev:
+docker:
 	docker run \
 		--name ${pjName} \
 		--rm \

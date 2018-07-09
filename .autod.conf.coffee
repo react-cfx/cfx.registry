@@ -23,10 +23,12 @@ export default
     'download'
     'jsonfile'
     'cfx.service.request'
+    'make-dir'
+    '@babel/plugin-transform-runtime'
+    'ddeyes'
   ]
   devdep: [
     'autod'
-    'ddeyes'
     'micro-dev'
     'shelljs'
   ]
