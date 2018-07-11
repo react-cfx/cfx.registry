@@ -1,3 +1,4 @@
-:80
-root /root/cfx.registry/data
-gzip
+:80 {
+  root /srv
+  gzip
+}

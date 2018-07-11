@@ -18,4 +18,4 @@ RUN bash -lc 'yarn'
 WORKDIR /root/cfx.registry/Container/config
 
 ENTRYPOINT [ "/bin/bash", "-lc" ]
-CMD [ "npx registry" ]
+CMD [ "/root/cfx.registry/bin/index.coffee" ]

@@ -19,7 +19,6 @@ docker:
 		--rm \
 		--name ${pjName} \
 		-p 4000:3000 \
-		-v $$(pwd):/cfx.registry/config \
 		${imgName} \
 		/bin/bash
 
@@ -27,14 +26,14 @@ deamon:
 	docker run -d \
 		--name ${pjName} \
 		--restart always \
-		-v $$(pwd):/cfx.registry \
+		-v $$(pwd)/data:/root/cfx.registry/Container/data \
 		${imgName}
 
 download:
 	docker run -d \
 		--name ${dlName} \
 		--restart always \
-		-p 5000:3000 \
+		-p 5000:80 \
 		-v $$(pwd)/data:/srv \
 		-v $$(pwd)/Caddyfile:/etc/Caddyfile \
 		productionwentdown/caddy
