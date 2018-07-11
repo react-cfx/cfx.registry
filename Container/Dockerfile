@@ -7,10 +7,15 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get autoremove -y
 
-RUN /bin/bash -lc "yarn global add cfx.registry" && \
-    mkdir -p /root/cfx.registy
+WORKDIR /root
+
+RUN git clone https://github.com/react-cfx/cfx.registry.git
 
 WORKDIR /root/cfx.registry
 
+RUN bash -lc 'yarn'
+
+WORKDIR /root/cfx.registry/Container/config
+
 ENTRYPOINT [ "/bin/bash", "-lc" ]
-CMD [ "yarn --cwd $(yarn global dir) registry" ]
+CMD [ "npx registry" ]

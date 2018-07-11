@@ -1,0 +1,3 @@
+:80
+root /root/cfx.registry/data
+gzip
