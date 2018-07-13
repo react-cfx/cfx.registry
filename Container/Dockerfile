@@ -9,9 +9,11 @@ RUN apt-get update && \
 
 WORKDIR /root
 
-RUN git clone https://github.com/react-cfx/cfx.registry.git
+RUN git clone -b 0.0.6 https://github.com/react-cfx/cfx.registry.git --depth 1
 
 WORKDIR /root/cfx.registry
+
+# RUN git checkout -b 0.0.6 
 
 RUN bash -lc 'yarn'
 
