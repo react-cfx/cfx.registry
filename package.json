@@ -1,6 +1,6 @@
 {
   "name": "cfx.registry",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "bin": {
     "registry": "bin/index.js"
   },

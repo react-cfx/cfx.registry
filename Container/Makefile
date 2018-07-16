@@ -2,8 +2,8 @@
 all: build rm deamon logs
 
 pjName := cfx.registry
-imgName := cfx/registry
-dlName := download.cfx.registry
+imgName := mooxe/${pjName}
+dlName := download.${pjName}
 
 build:
 	docker build -t ${imgName} .
