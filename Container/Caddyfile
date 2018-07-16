@@ -1,4 +1,7 @@
 :80 {
   root /srv
+  timeouts 30s 
   gzip
+  log /var/log/caddy/access.log
+  errors /var/log/caddy/error.log
 }

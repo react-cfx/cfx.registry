@@ -17,13 +17,35 @@ writeJson = (jsonData) =>
     versions
   } = jsonData
 
-  pkgName = packages.keys[0]
-  pkgDir = Path.join "#{config.jsonPath}", "/#{pkgName}"
-  lastVersion = packages.all[pkgName]["dist-tags"].latest
+  groups = packages.keys[0].split '/'
+
+  if groups.length is 2
+    groupName = groups[0]
+    pkgName = groups[1]
+    groupPkgName = "#{groupName}/#{pkgName}"
+  else 
+    groupName = ''
+    pkgName = groups[0]
+    groupPkgName = pkgName
+
+  pkgDir = Path.join "#{config.jsonPath}", "#{groupPkgName}"
+
+  lastVersion = packages.all[groupPkgName]["dist-tags"].latest
   latestTarball = versions
-  .all["#{pkgName}@#{lastVersion}"]
+  .all["#{groupPkgName}@#{lastVersion}"]
   .dist.tarball
+
   file = "#{pkgDir}/#{pkgName}-#{lastVersion}.tgz"
+
+  # dd {
+  #   groupPkgName
+  #   groupName
+  #   pkgName
+  #   pkgDir
+  #   lastVersion
+  #   latestTarball
+  #   file
+  # }
 
   unless fs.existsSync file
 
@@ -41,10 +63,10 @@ writeJson = (jsonData) =>
     shasum = h.digest 'hex'
 
     if config.pkgCache is true
-      versions.all["#{pkgName}@#{lastVersion}"].dist.tarball =
-        "#{config.downloadPreUrl}/#{pkgName}/#{pkgName}-#{lastVersion}.tgz"
+      versions.all["#{groupPkgName}@#{lastVersion}"].dist.tarball =
+        "#{config.downloadPreUrl}/#{groupPkgName}/#{pkgName}-#{lastVersion}.tgz"
 
-    if shasum is jsonData.versions.all["#{pkgName}@#{lastVersion}"].dist.shasum
+    if shasum is jsonData.versions.all["#{groupPkgName}@#{lastVersion}"].dist.shasum
 
       fs.writeFileSync "#{pkgDir}/shasum.txt", shasum
 
@@ -62,10 +84,10 @@ writeJson = (jsonData) =>
   else
 
     if config.pkgCache is true
-      versions.all["#{pkgName}@#{lastVersion}"].dist.tarball =
-        "#{config.downloadPreUrl}/#{pkgName}/#{pkgName}-#{lastVersion}.tgz"
+      versions.all["#{groupPkgName}@#{lastVersion}"].dist.tarball =
+        "#{config.downloadPreUrl}/#{groupPkgName}/#{pkgName}-#{lastVersion}.tgz"
 
-  versions.all["#{pkgName}@#{lastVersion}"].dist.tarball
+  versions.all["#{groupPkgName}@#{lastVersion}"].dist.tarball
 
 readJson = (pkgName) =>
 

@@ -36,6 +36,7 @@ download:
 		-p 5000:80 \
 		-v $$(pwd)/data:/srv \
 		-v $$(pwd)/Caddyfile:/etc/Caddyfile \
+		-v $$(pwd)/log:/var/log/caddy \
 		productionwentdown/caddy
 
 in:
