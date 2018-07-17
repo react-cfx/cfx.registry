@@ -15,6 +15,9 @@ export default (req, res) =>
     data = await api.packages packageName, tagOrVersion
   catch e
     dd e
+    data = readJson packageName
+    send res, 200
+    , data
 
   if data?.name?
 
