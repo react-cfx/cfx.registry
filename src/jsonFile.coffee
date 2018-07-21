@@ -1,4 +1,4 @@
-# import dd from 'ddeyes'
+import dd from 'ddeyes'
 import fs from 'fs'
 import Path from 'path'
 import crypto from 'crypto'
@@ -92,13 +92,18 @@ writeJson = (jsonData) =>
 readJson = (pkgName) =>
 
   pkgDir = Path.join "#{config.jsonPath}", "/#{pkgName}"
-  packages = jsonfile.readFileSync Path.join pkgDir, './package.json'
-  versions = jsonfile.readFileSync Path.join pkgDir, './version.json'
 
-  decode {
-    packages
-    versions
-  }
+  if fs.existsSync pkgDir
+
+    packages = jsonfile.readFileSync Path.join pkgDir, './package.json'
+    versions = jsonfile.readFileSync Path.join pkgDir, './version.json'
+
+    decode {
+      packages
+      versions
+    }
+
+  else ''
 
 export {
   writeJson

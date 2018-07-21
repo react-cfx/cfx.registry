@@ -19,6 +19,8 @@ defaultConfig =
   pkgCache: false
   downloadPreUrl: "http://download.cfx.registry:3000"
 
+  diffDay: 1
+
 configFileName = 'cfx.registry'
 
 userConfig = [
