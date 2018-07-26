@@ -2,11 +2,13 @@ import { send } from 'micro'
 import dd from 'ddeyes'
 import * as api from '../api'
 import Normalizer from '../Normalizer/package'
+import config from '../config'
 import jsonFile, {
   readJson
 } from '../jsonFile'
 import {
   getNow
+  getPkgDay
   diffDays
 } from '../days'
 
@@ -18,14 +20,17 @@ export default (req, res) =>
   data = readJson packageName
 
   now = getNow()
-
-  dd diffDays now.now, '20180720'
+  diffDay = diffDays now.now, (
+    getPkgDay packageName
+  )
 
   if data?.name? and (
     data.name is packageName
-  ) 
+  ) and (
+    diffDay < config.diffDay
+  )
 
-    dd now.format
+    dd "1: #{now.format}"
     dd data.versions["#{data["dist-tags"].latest}"].dist.tarball
     send res, 200
     , data
@@ -38,7 +43,7 @@ export default (req, res) =>
       dd e
       data = readJson packageName
 
-      dd now.format
+      dd "2: #{now.format}"
       dd data.versions["#{data["dist-tags"].latest}"].dist.tarball
       # dd (Normalizer data).packages
       send res, 200
@@ -54,7 +59,7 @@ export default (req, res) =>
       # unless fileUrl is ''
       #   data.versions["#{data["dist-tags"].latest}"].dist.tarball = fileUrl
 
-      dd now.format
+      dd "3: #{now.format}"
       # dd (Normalizer data).packages
       dd data.versions["#{data["dist-tags"].latest}"].dist.tarball
       send res, 200

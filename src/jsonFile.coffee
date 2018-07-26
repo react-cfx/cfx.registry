@@ -8,7 +8,10 @@ import download from 'download'
 import makeDir from 'make-dir'
 
 import config from './config'
-import { decode } from './Normalizer/package'
+import { decode } from './Normalizer/package' 
+import {
+  getNow
+} from './days'
 
 writeJson = (jsonData) =>
 
@@ -28,7 +31,7 @@ writeJson = (jsonData) =>
     pkgName = groups[0]
     groupPkgName = pkgName
 
-  pkgDir = Path.join "#{config.jsonPath}", "#{groupPkgName}"
+  pkgDir = Path.join config.jsonPath, groupPkgName
 
   lastVersion = packages.all[groupPkgName]["dist-tags"].latest
   latestTarball = versions
@@ -47,13 +50,15 @@ writeJson = (jsonData) =>
   #   file
   # }
 
-  unless fs.existsSync file
+  unless fs.existsSync pkgDir
+    await makeDir pkgDir
+  else unless (fs.statSync pkgDir).isDirectory()
+    fs.unlinkSync pkgDir
+    await makeDir pkgDir
 
-    unless fs.existsSync pkgDir
-      await makeDir pkgDir
-    else unless (fs.statSync pkgDir).isDirectory()
-      fs.unlinkSync pkgDir
-      await makeDir pkgDir
+  fs.writeFileSync "#{pkgDir}/create.txt", getNow().format
+
+  unless fs.existsSync file
 
     await download latestTarball, pkgDir
 
