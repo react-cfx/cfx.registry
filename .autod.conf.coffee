@@ -26,6 +26,7 @@ export default
     'make-dir'
     '@babel/plugin-transform-runtime'
     'ddeyes'
+    'dayjs'
   ]
   devdep: [
     'autod'
